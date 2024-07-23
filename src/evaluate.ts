@@ -41,5 +41,3 @@ export const evaluate = function (expression: string, stack: number[]) {
   }
   return stack[stack.length - 1];
 };
-
-console.log('hi', evaluate('5 5 +', []));
