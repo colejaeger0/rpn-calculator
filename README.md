@@ -1,70 +1,33 @@
-# TS - Boilerplate
+# RPN Calculator
 
-Demonstration of valid base configurations for:
+Welcome to the Reverse Polish Notation Calculator! This tool allows users to perform RPN calculations from the command-line.
 
--   TypeScript
+## Getting Started
+- Make sure Node.js is installed
+- Run "npm start" to get started
+- Hit 'q' or CTRL-D to exit
+- "npm test" runs tests
 
-    Typescript language support
-    -   config file: `tsconfig.json`
-    -   dependencies: typescript
-    -   optional dependencies: @types/node, ts-node
+## Features
 
--   Jest
+- Supports addition `+`, subtraction `-`, multiplication `*`, and division `/`.
+- Allows users to view and clear the stack by entering `s` (to view) or `c` (to clear)
 
-    Testing framework with typings
-    -   config file: `jest.config.js`
-    -   dependencies: jest, ts-jest, @types/jest
+## Formatting
 
--   ESLint
+- Make sure all your calculations are formatted with spaces between all numbers and operators.
+  Valid Examples: `5 66 -2 + / `, `6 6 +`
+  Invalid Examples: `66+`, `5 6+ -2 *-`
 
-    Linting tool with TS support
-    -   config file: `.eslintrc.js`
-    -   dependencies: eslint, @typescript-eslint/parser, @typescript-eslint/eslint-plugin
+## Architecture
 
--   Prettier
+- This program uses Typescript to ensure ____
+- eslint is used to adhere to stylistic standards
+- Jest testing library is used to ensure future scalability
+- Several source files are used to *abstract*? code and establish readability inside index.ts
 
-    Formatting/linting with TS support
-    -   config file: `.prettierrc.js`
-    -   dependencies: prettier, eslint-config-prettier, eslint-plugin-prettier
+## This tool's future
 
--   Editor Config
+If I had more time to develop this, I'd love to add a feature the user can toggle that displays each step of how operations are calculated via the stack when performing calculations. It could be a good learning tool for those interested in understanding how Reverse Polish Notation works.
 
-    Base formatting standards, detected by IDE, linters, formatters
-    -   config file: `.editorconfig`
-
-- Import Sorting
-
-    Adds import sort formatting to linter + formatter
-    -   config file: `package.json` ("importSort")
-    -   dependencies: import-sort, import-sort-cli, import-sort-parser-typescript, import-sort-style-module-scoped, prettier-plugin-import-sort
-
--   VSC Settings
-
-    Helper configuration for Visual Studio Code, to integrate auto-formatting, lint preferences
-    -   config file: `.vscode/settings.json`
-    -   note:
-        -   eslint is configured to automatically format on save
-        -   vsc default format on save is disabled to prevent duplicate format operations on save
-
-## Usage
-
-```
-    $ yarn start
-    $ yarn build
-    $ yarn lint
-    $ yarn test
-```
-
-## IDE Configuration
-
-This project is optimised for development using Visual Studio Code, containing launch configurations and debugging utilities, defined in the .vscode directory.
-
-For best results, please ensure the following configuration steps are taken on your development machine:
-
-- Add VSC Extensions: Debugger for Chrome, DotENV, EditorConfig, ESLint
-
-- Remove the following global dependencies:
-
-  `$ yarn global remove eslint typescript`
-
-  `$ npm -g uninstall eslint typescript`
+Testing could be more elaborate and test for different errors in more specific cases like diving by zero and ensuring minute differences between assigning negative symbols vs minus symbols.

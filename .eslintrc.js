@@ -16,4 +16,7 @@ module.exports = {
       modules: true,
     },
   },
+  rules: {
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+  }
 }
