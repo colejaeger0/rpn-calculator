@@ -43,7 +43,6 @@ Enter 'q' to quit
 };
 
 rl.on('line', (input: string) => {
-  // handle special keys here
   const result = process(input);
   if (result !== undefined) {
     console.log(result);

@@ -3,7 +3,7 @@ import { isNumber } from './utils';
 const operators = new Set(['+', '-', '/', '*']);
 
 export const evaluate = function (expression: string, stack: number[]) {
-  const arrayOfExpressions = expression.split(' '); // [5, *, 50, *, -5, 9-0]
+  const arrayOfExpressions = expression.split(' ');
   for (const exp of arrayOfExpressions) {
     if (isNumber(exp)) {
       stack.push(Number(exp));
