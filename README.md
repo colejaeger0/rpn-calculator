@@ -21,10 +21,10 @@ Welcome to the Reverse Polish Notation Calculator! This tool allows users to per
 
 ## Architecture
 
-- This program uses Typescript to ensure ____
+- Typescript is used to ensure maintainability
 - eslint is used to adhere to stylistic standards
 - Jest testing library is used to ensure future scalability
-- Several source files are used to *abstract*? code and establish readability inside index.ts
+- Multiple modules to ensure readability inside index.ts and support testing
 
 ## This tool's future
 
